@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="<meta name="description" content="ISTIYAK SERVICE POINT एक trusted Digital Seva Kendra है जहाँ Aadhaar, PAN, Voter ID, Ayushman Bharat, Driving License, Passport, RTPS Certificate, Ration Card और सभी online government services fast और secure तरीके से उपलब्ध हैं।" /> 
+  <meta name="theme-color" content="#0b63f6">
+  <link rel="manifest" href="manifest.json">
+  <title>ISTIYAK SERVICE POINT</title>
+  
+  
+
+  <!-- Google Analytics (GA4) - replace G-XXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXX'); // <-- Replace with your GA4 Measurement ID
+  </script>
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    background:linear-gradient(135deg,#0047ff,#00aaff);
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+}
+
+.logo h1{
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo p{
+    font-size:14px;
+    color:#e6f3ff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* HERO SECTION */
+
+.hero{
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 8%;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+}
+
+.hero-content h2{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content h3{
+    font-size:28px;
+    color:#ffe600;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.hero-btn{
+    margin-top:30px;
+}
+
+.hero-btn a{
+    text-decoration:none;
+    background:#ffe600;
+    color:#000;
+    padding:14px 35px;
+    border-radius:40px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.hero-btn a:hover{
+    background:#fff;
+}
+
+/* SERVICES */
+
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+}
+
+.section-title h2{
+    font-size:40px;
+    color:#0047ff;
+}
+
+.services{
+    width:100%;
+    padding:0 8% 70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:70px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#0047ff;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+    font-size:15px;
+}
+
+/* ABOUT */
+
+.about{
+    padding:70px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    color:#0047ff;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+    color:#444;
+}
+
+/* NOTICE */
+
+.notice{
+    padding:70px 8%;
+    background:#f0f5ff;
+}
+
+.notice-box{
+    background:#fff;
+    padding:40px;
+    border-left:6px solid red;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.notice-box h2{
+    color:red;
+    margin-bottom:20px;
+}
+
+.notice-box ul{
+    padding-left:20px;
+}
+
+.notice-box ul li{
+    margin-bottom:12px;
+    line-height:1.6;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:70px 8%;
+    text-align:center;
+    background:#fff;
+}
+
+.contact h2{
+    font-size:40px;
+    color:#0047ff;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#001b55;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+footer p{
+    font-size:15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-content h2{
+    font-size:38px;
+}
+
+.hero-content h3{
+    font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+
+        <div class="logo">
+            <h1>ISTIYAK SERVICE POINT</h1>
+            <p>डिजिटल सेवाओं का स्मार्ट समाधान</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Service.html">Services</a></li>
+				<li><a href="Free Course.html">Free Course</a></li>
+                <li><a href="Disclaimer.html">Disclaimer</a></li>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h2>ISTIYAK SERVICE POINT</h2>
+
+        <h3>हर डिजिटल सेवा अब एक ही जगह</h3>
+
+        <p>
+            Aadhaar Card, PAN Card, Ayushman Card, Driving License,
+            Income/Caste/Residence Certificate, Electricity Bill Payment
+            एवं सभी डिजिटल सेवाएँ अब तेज़ और सुरक्षित तरीके से।
+        </p>
+
+        <div class="hero-btn">
+            <a href="#">Explore Services</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<!-- SERVICES SECTION START -->
+
+<div class="section-title">
+    <h2>Our Services</h2>
+</div>
+
+<section class="services">
+
+    <!-- Aadhaar Card -->
+    <div class="card">
+        <a href="https://myaadhaar.uidai.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+            <h3>Aadhaar Card</h3>
+
+            <p>Aadhaar update, correction and all services.</p>
+
+        </a>
+    </div>
+
+    <!-- Voter Card -->
+    <div class="card">
+        <a href="https://voters.eci.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+
+            <h3>Voter ID Card</h3>
+
+            <p>New voter registration & correction services.</p>
+
+        </a>
+    </div>
+
+    <!-- PAN Card -->
+    <div class="card">
+        <a href="https://onlineservices.proteantech.in/paam/endUserRegisterContact.html" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/2966/2966485.png">
+
+            <h3>PAN Card</h3>
+
+            <p>New PAN apply & PAN correction services.</p>
+
+        </a>
+    </div>
+
+    <!-- UTI PAN -->
+    <div class="card">
+        <a href="https://www.pan.utiitsl.com/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png">
+
+            <h3>UTI PAN Card</h3>
+
+            <p>UTI PAN application & correction service.</p>
+
+        </a>
+    </div>
+
+    <!-- Ayushman -->
+    <div class="card">
+        <a href="https://beneficiary.nha.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3588/3588658.png">
+
+            <h3>Ayushman Card</h3>
+
+            <p>Ayushman Bharat card registration & download.</p>
+
+        </a>
+    </div>
+
+    <!-- E-Shram -->
+    <div class="card">
+        <a href="https://eshram.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/2830/2830284.png">
+
+            <h3>E-Shram Card</h3>
+
+            <p>E-Shram registration & download service.</p>
+
+        </a>
+    </div>
+
+    <!-- Appar ID -->
+    <div class="card">
+        <a href="https://apaar.education.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3063/3063822.png">
+
+            <h3>Appar ID Card</h3>
+
+            <p>Apply & download Appar ID Card online.</p>
+
+        </a>
+    </div>
+
+    <!-- Ration Card -->
+    <div class="card">
+        <a href="https://epds.bihar.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+
+            <h3>Ration Card</h3>
+
+            <p>New ration card apply & download services.</p>
+
+        </a>
+    </div>
+
+    <!-- Passport -->
+    <div class="card">
+        <a href="https://www.passportindia.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png">
+
+            <h3>Passport Seva</h3>
+
+            <p>Passport application & appointment services.</p>
+
+        </a>
+    </div>
+
+    <!-- Driving License -->
+    <div class="card">
+        <a href="https://parivahan.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png">
+
+            <h3>Driving License</h3>
+
+            <p>DL apply, renewal & online services.</p>
+
+        </a>
+    </div>
+
+    <!-- RTPS -->
+    <div class="card">
+        <a href="https://serviceonline.bihar.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/942/942799.png">
+
+            <h3>RTPS Service</h3>
+
+            <p>Income, caste & residence certificate services.</p>
+
+        </a>
+    </div>
+	
+	<!-- NEW SERVICES SECTION -->
+
+    <!-- Bihar Farmer Registry -->
+    <div class="card">
+        <a href="https://bhfr.agristack.gov.in/farmer-registry-bh/#/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png"
+            style="width:70px; margin-bottom:15px;">
+
+            <h3>Bihar Farmer Registry</h3>
+
+            <p>Farmer registration & agriculture related services.</p>
+
+        </a>
+    </div>
+
+    <!-- MVPY -->
+    <div class="card">
+        <a href="https://www.sspmis.bihar.gov.in/CheckMvpyAadharAuth" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png"
+            style="width:70px; margin-bottom:15px;">
+
+            <h3>MVPY Pension Yojna</h3>
+
+            <p>Mukhyamantri Vriddhjan Pension Yojna services.</p>
+
+        </a>
+    </div>
+
+    <!-- Income Tax -->
+    <div class="card">
+        <a href="https://www.incometax.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
+            style="width:70px; margin-bottom:15px;">
+
+            <h3>Income Tax Department</h3>
+
+            <p>Income tax filing & PAN related services.</p>
+
+        </a>
+    </div>
+
+    <!-- IRCTC -->
+    <div class="card">
+        <a href="https://www.irctc.co.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3063/3063822.png"
+            style="width:70px; margin-bottom:15px;">
+
+            <h3>IRCTC Railway</h3>
+
+            <p>Train ticket booking & railway services.</p>
+
+        </a>
+    </div>
+
+    <!-- EPFO -->
+    <div class="card">
+        <a href="https://www.epfindia.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048941.png"
+            style="width:70px; margin-bottom:15px;">
+
+            <h3>EPFO Service</h3>
+
+            <p>PF balance, passbook & EPFO services.</p>
+
+        </a>
+    </div>
+
+    <!-- I Love PDF -->
+    <div class="card">
+        <a href="https://www.ilovepdf.com/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+            style="width:70px; margin-bottom:15px;">
+
+            <h3>I Love PDF</h3>
+
+            <p>Merge, compress, convert & edit PDF files.</p>
+
+        </a>
+    </div>
+
+    <!-- Pi7 Tools -->
+    <div class="card">
+        <a href="https://image.pi7.org/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png"
+            style="width:70px; margin-bottom:15px;">
+
+            <h3>Pi7 Image Tools</h3>
+
+            <p>Resize, convert & compress images online.</p>
+
+        </a>
+    </div>
+
+    <!-- Print Sahyogi -->
+    <div class="card">
+        <a href="https://printsahyogi.com/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3022/3022251.png"
+            style="width:70px; margin-bottom:15px;">
+
+            <h3>Print Sahyogi</h3>
+
+            <p>Online print portal & printing services.</p>
+
+        </a>
+    </div>
+
+    <!-- DigiLocker -->
+    <div class="card">
+        <a href="https://www.digilocker.gov.in/" target="_blank">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/891/891419.png"
+            style="width:70px; margin-bottom:15px;">
+
+            <h3>DigiLocker</h3>
+
+            <p>Store & download government documents online.</p>
+
+        </a>
+    </div>
+	
+	
+	<!-- FONT AWESOME CDN -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<!-- SERVICES SECTION -->
+
+
+
+    <!-- जमीन रसीद -->
+    <div class="card">
+        <a href="https://biharbhumi.bihar.gov.in/" target="_blank">
+
+            <i class="fa-solid fa-landmark"
+            style="font-size:60px;color:#0b63f6;margin-bottom:15px;"></i>
+
+            <h3>जमीन रसीद</h3>
+
+            <p>ऑनलाइन जमीन रसीद सेवाएँ।</p>
+
+        </a>
+    </div>
+
+    <!-- बिजली बिल -->
+    <div class="card">
+        <a href="https://www.sbpdcl.co.in/" target="_blank">
+
+            <i class="fa-solid fa-bolt"
+            style="font-size:60px;color:#ff9800;margin-bottom:15px;"></i>
+
+            <h3>विजली बिल</h3>
+
+            <p>Electricity bill payment services.</p>
+
+        </a>
+    </div>
+
+    <!-- मोबाइल रिचार्ज -->
+    <div class="card">
+        <a href="https://paytm.com/recharge" target="_blank">
+
+            <i class="fa-solid fa-mobile-screen-button"
+            style="font-size:60px;color:#00bcd4;margin-bottom:15px;"></i>
+
+            <h3>मोबाईल रिचार्ज</h3>
+
+            <p>All mobile recharge services.</p>
+
+        </a>
+    </div>
+
+    <!-- DTH -->
+    <div class="card">
+        <a href="https://www.airtel.in/dth-recharge" target="_blank">
+
+            <i class="fa-solid fa-tv"
+            style="font-size:60px;color:#673ab7;margin-bottom:15px;"></i>
+
+            <h3>DTH रिचार्ज</h3>
+
+            <p>DTH recharge services.</p>
+
+        </a>
+    </div>
+
+    <!-- Scholarship -->
+    <div class="card">
+        <a href="https://medhasoft.bih.nic.in/" target="_blank">
+
+            <i class="fa-solid fa-graduation-cap"
+            style="font-size:60px;color:#4caf50;margin-bottom:15px;"></i>
+
+            <h3>छात्रवृत्ति आवेदन</h3>
+
+            <p>10th & 12th scholarship apply.</p>
+
+        </a>
+    </div>
+
+    <!-- PM Awas -->
+    <div class="card">
+        <a href="https://pmaymis.gov.in/" target="_blank">
+
+            <i class="fa-solid fa-house"
+            style="font-size:60px;color:#795548;margin-bottom:15px;"></i>
+
+            <h3>PM आवास योजना</h3>
+
+            <p>प्रधानमंत्री आवास योजना सेवाएँ।</p>
+
+        </a>
+    </div>
+
+    <!-- Birth -->
+    <div class="card">
+        <a href="https://crsorgi.gov.in/" target="_blank">
+
+            <i class="fa-solid fa-certificate"
+            style="font-size:60px;color:#009688;margin-bottom:15px;"></i>
+
+            <h3>जन्म प्रमाण पत्र</h3>
+
+            <p>Birth certificate services.</p>
+
+        </a>
+    </div>
+
+    <!-- Character -->
+    <div class="card">
+        <a href="https://serviceonline.bihar.gov.in/renderApplicationForm.do?serviceId=12050016&UUID=68fbc562-3ffb-48b1-8585-e635488d100b&directService=true&tempId=4236&grievDefined=0&serviceLinkRequired=No&userLoggedIn=N&source=CTZN&OWASP_CSRFTOKEN=SFSE-PU1W-JLWX-VWPF-NJHU-F445-5VDX-G18A" target="_blank">
+
+            <i class="fa-solid fa-id-card"
+            style="font-size:60px;color:#e91e63;margin-bottom:15px;"></i>
+
+            <h3>Character Certificate</h3>
+
+            <p>चरित्र प्रमाण पत्र आवेदन।</p>
+
+        </a>
+    </div>
+
+    <!-- PM Kisan -->
+    <div class="card">
+        <a href="https://pmkisan.gov.in/" target="_blank">
+
+            <i class="fa-solid fa-tractor"
+            style="font-size:60px;color:#2e7d32;margin-bottom:15px;"></i>
+
+            <h3>PM किसान योजना</h3>
+
+            <p>PM Kisan registration & status.</p>
+
+        </a>
+    </div>
+
+    <!-- Bihar Bhumi -->
+    <div class="card">
+        <a href="https://biharbhumi.bihar.gov.in/" target="_blank">
+
+            <i class="fa-solid fa-map-location-dot"
+            style="font-size:60px;color:#3f51b5;margin-bottom:15px;"></i>
+
+            <h3>Bihar Bhumi</h3>
+
+            <p>Land & property services.</p>
+
+        </a>
+    </div>
+
+    <!-- Umang -->
+    <div class="card">
+        <a href="https://web.umang.gov.in/" target="_blank">
+
+            <i class="fa-solid fa-globe"
+            style="font-size:60px;color:#2196f3;margin-bottom:15px;"></i>
+
+            <h3>UMANG</h3>
+
+            <p>Government services portal.</p>
+
+        </a>
+    </div>
+
+    <!-- Indian Post -->
+    <div class="card">
+        <a href="https://www.indiapost.gov.in/" target="_blank">
+
+            <i class="fa-solid fa-envelope"
+            style="font-size:60px;color:#ff5722;margin-bottom:15px;"></i>
+
+            <h3>Indian Post</h3>
+
+            <p>Postal & speed post services.</p>
+
+        </a>
+    </div>
+
+    <!-- Voter Correction -->
+    <div class="card">
+        <a href="https://voters.eci.gov.in/" target="_blank">
+
+            <i class="fa-solid fa-vote-yea"
+            style="font-size:60px;color:#607d8b;margin-bottom:15px;"></i>
+
+            <h3>Voter ID Correction</h3>
+
+            <p>Voter card correction services.</p>
+
+        </a>
+    </div>
+
+    <!-- PAN Correction -->
+    <div class="card">
+        <a href="https://onlineservices.proteantech.in/paam/endUserRegisterContact.html" target="_blank">
+
+            <i class="fa-solid fa-address-card"
+            style="font-size:60px;color:#9c27b0;margin-bottom:15px;"></i>
+
+            <h3>PAN Card Correction</h3>
+
+            <p>PAN correction & update services.</p>
+
+        </a>
+    </div>
+
+    <!-- PAN Mobile Update -->
+    <div class="card">
+        <a href="https://onlineservices.proteantech.in/paam/endUserAddressUpdate.html" target="_blank">
+
+            <i class="fa-solid fa-phone-volume"
+            style="font-size:60px;color:#03a9f4;margin-bottom:15px;"></i>
+
+            <h3>PAN Mobile Update</h3>
+
+            <p>Mobile & email update services.</p>
+
+        </a>
+    </div>
+
+    <!-- भू लगान -->
+    <div class="card">
+        <a href="https://www.bhulagan.bihar.gov.in/" target="_blank">
+
+            <i class="fa-solid fa-money-bill-wave"
+            style="font-size:60px;color:#8bc34a;margin-bottom:15px;"></i>
+
+            <h3>भू – लगान</h3>
+
+            <p>Land tax payment services.</p>
+
+        </a>
+    </div>
+
+    <!-- परिमार्जन -->
+    <div class="card">
+        <a href="https://parimarjanplus.bihar.gov.in/ParimarjanNew/userDashboard.aspx" target="_blank">
+
+            <i class="fa-solid fa-pen-to-square"
+            style="font-size:60px;color:#ff9800;margin-bottom:15px;"></i>
+
+            <h3>परिमार्जन प्लस</h3>
+
+            <p>Online land correction services.</p>
+
+        </a>
+    </div>
+
+    <!-- PAN Aadhaar -->
+    <div class="card">
+        <a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/bl-link-aadhaar-landing" target="_blank">
+
+            <i class="fa-solid fa-link"
+            style="font-size:60px;color:#2196f3;margin-bottom:15px;"></i>
+
+            <h3>PAN Aadhaar Link</h3>
+
+            <p>Link PAN with Aadhaar.</p>
+
+        </a>
+    </div>
+
+    <!-- ePAN -->
+    <div class="card">
+        <a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan" target="_blank">
+
+            <i class="fa-solid fa-file"
+            style="font-size:60px;color:#673ab7;margin-bottom:15px;"></i>
+
+            <h3>Get New e-PAN</h3>
+
+            <p>Instant e-PAN services.</p>
+
+        </a>
+    </div>
+
+    <!-- PAN Resize -->
+    <div class="card">
+        <a href="https://pancardresizer.com/" target="_blank">
+
+            <i class="fa-solid fa-expand"
+            style="font-size:60px;color:#f44336;margin-bottom:15px;"></i>
+
+            <h3>PAN Resize Maker</h3>
+
+            <p>PAN resize & image tools.</p>
+
+        </a>
+    </div>
+
+    <!-- CSC -->
+    <div class="card">
+        <a href="https://cscregister.csccloud.in/" target="_blank">
+
+            <i class="fa-solid fa-desktop"
+            style="font-size:60px;color:#3f51b5;margin-bottom:15px;"></i>
+
+            <h3>CSC Registration</h3>
+
+            <p>CSC & Digital Seva registration.</p>
+
+        </a>
+    </div>
+
+    <!-- TEC -->
+    <div class="card">
+        <a href="https://cscentrepreneur.in/register" target="_blank">
+
+            <i class="fa-solid fa-book-open"
+            style="font-size:60px;color:#009688;margin-bottom:15px;"></i>
+
+            <h3>TEC Course</h3>
+
+            <p>Telecenter Entrepreneur Course.</p>
+
+        </a>
+    </div>
+
+    <!-- Aadhaar DBT -->
+    <div class="card">
+        <a href="https://www.npci.org.in/" target="_blank">
+
+            <i class="fa-solid fa-fingerprint"
+            style="font-size:60px;color:#e91e63;margin-bottom:15px;"></i>
+
+            <h3>आधार DBT</h3>
+
+            <p>Aadhaar DBT enable services.</p>
+
+        </a>
+    </div>
+
+</section>
+
+
+
+    
+
+
+
+
+
+
+    <!-- DOWNLOAD SERVICES START -->
+
+<div class="section-title">
+    <h2>Download Services</h2>
+</div>
+
+<section class="services">
+
+    <!-- Voter ID -->
+    <div class="card">
+        <a href="https://voters.eci.gov.in/" target="_blank">
+
+            <h3>Voter ID Card Download</h3>
+
+            <p>ऑनलाइन वोटर आईडी कार्ड डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- Ayushman -->
+    <div class="card">
+        <a href="https://beneficiary.nha.gov.in/" target="_blank">
+
+            <h3>Ayushman Card Download</h3>
+
+            <p>आयुष्मान भारत कार्ड डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- Aadhaar -->
+    <div class="card">
+        <a href="https://myaadhaar.uidai.gov.in/genricDownloadAadhaar/en" target="_blank">
+
+            <h3>Aadhaar Card Download</h3>
+
+            <p>आधार कार्ड PDF डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- E Shram -->
+    <div class="card">
+        <a href="https://eshram.gov.in/" target="_blank">
+
+            <h3>E Shram Card Download</h3>
+
+            <p>ई-श्रम कार्ड डाउनलोड और प्रिंट करें।</p>
+
+        </a>
+    </div>
+
+    <!-- ABC ID -->
+    <div class="card">
+        <a href="https://www.abc.gov.in/" target="_blank">
+
+            <h3>ABC ID Card Download</h3>
+
+            <p>Academic Bank of Credit ID डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- Caste Certificate -->
+    <div class="card">
+        <a href="https://swcs.bihar.gov.in/RtpsReportView/certificate_download.jsp" target="_blank">
+
+            <h3>Caste Certificate Download</h3>
+
+            <p>जाति प्रमाण पत्र डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- Income Certificate -->
+    <div class="card">
+        <a href="https://swcs.bihar.gov.in/RtpsReportView/certificate_download.jsp" target="_blank">
+
+            <h3>Income Certificate Download</h3>
+
+            <p>आय प्रमाण पत्र डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- Residence Certificate -->
+    <div class="card">
+       <a href="https://swcs.bihar.gov.in/RtpsReportView/certificate_download.jsp" target="_blank">
+
+            <h3>Residence Certificate Download</h3>
+
+            <p>निवास प्रमाण पत्र डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- Birth Certificate -->
+    <div class="card">
+       <a href="https://swcs.bihar.gov.in/RtpsReportView/certificate_download.jsp" target="_blank">
+
+            <h3>Birth Certificate Download</h3>
+
+            <p>जन्म प्रमाण पत्र डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- Death Certificate -->
+    <div class="card">
+        <a href="https://crsorgi.gov.in/" target="_blank">
+
+            <h3>Death Certificate Download</h3>
+
+            <p>मृत्यु प्रमाण पत्र डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- Labour Card -->
+    <div class="card">
+        <a href="https://labour.bih.nic.in/" target="_blank">
+
+            <h3>Labour Card Download</h3>
+
+            <p>लेबर कार्ड ऑनलाइन डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- Ration Card -->
+    <div class="card">
+        <a href="https://epds.bihar.gov.in/" target="_blank">
+
+            <h3>Ration Card Download</h3>
+
+            <p>बिहार राशन कार्ड डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+    <!-- PM Kisan -->
+    <div class="card">
+        <a href="https://pmkisan.gov.in/BeneficiaryStatus_New.aspx" target="_blank">
+
+            <h3>PM Kisan Status</h3>
+
+            <p>Beneficiary status & certificate download.</p>
+
+        </a>
+    </div>
+
+    <!-- Driving Licence -->
+    <div class="card">
+        <a href="https://parivahan.gov.in/" target="_blank">
+
+            <h3>Driving Licence Download</h3>
+
+            <p>DigiLocker / Parivahan से DL डाउनलोड करें।</p>
+
+        </a>
+    </div>
+	<!-- Pan Card -->
+    <div class="card">
+        <a href="https://beneficiary.nha.gov.in/" target="_blank">
+
+            <h3>Pan Card Download</h3>
+
+            <p>पैन कार्ड डाउनलोड करें।</p>
+
+        </a>
+    </div>
+	
+	<!-- Farmer ID Card -->
+    <div class="card">
+        <a href="https://bhfr.agristack.gov.in/farmer-registry-bh/#/" target="_blank">
+
+            <h3>Farmer ID Card Download</h3>
+
+            <p>फार्मर आईडी कार्ड डाउनलोड करें।</p>
+
+        </a>
+    </div>
+
+<!-- Job Card -->
+    <div class="card">
+        <a href="https://nregastrep.nic.in/netnrega/homestciti.aspx?state_code=05&state_name=BIHAR&lflag=eng&labels=labels" target="_blank">
+
+            <h3>Job Card Download</h3>
+
+            <p>जॉब कार्ड डाउनलोड करें</p>
+
+        </a>
+    </div>
+</section>
+
+<!-- DOWNLOAD SERVICES END -->
+
+
+
+
+
+
+
+<!-- ABOUT -->
+
+<section class="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        ISTIYAK SERVICE POINT एक भरोसेमंद डिजिटल सेवा केंद्र है जहाँ
+        सभी सरकारी एवं ऑनलाइन सेवाएँ तेज़, सुरक्षित और आसान तरीके से उपलब्ध कराई जाती हैं।
+        हमारा उद्देश्य हर व्यक्ति तक डिजिटल सेवाएँ पहुँचाना है।
+    </p>
+	
+	
+
+</section>
+<!-- SOURCE OF INFORMATION SECTION -->
+
+<section class="about">
+ <div class="notice-box">
+
+    <h2>Source of Information</h2>
+
+    <ul>
+       ISTIYAK SERVICE POINT केवल सरकारी एवं आधिकारिक वेबसाइटों की जानकारी
+        उपयोग करता है। सभी सेवाओं के लिंक संबंधित विभागों की Official Website से जुड़े हुए हैं।
+        हम किसी भी सरकारी विभाग से सीधे जुड़े हुए नहीं हैं।
+        उपयोगकर्ताओं को सही एवं सुरक्षित डिजिटल सेवाएँ प्रदान करना हमारा उद्देश्य है।
+    </ul>
+	</div>
+
+</section>
+
+
+
+<!-- NOTICE -->
+
+<section class="notice">
+
+    <div class="notice-box">
+
+        <h2>Important Notice</h2>
+
+        <ul>
+            <li>सभी सेवाएँ ग्राहक द्वारा दिए गए दस्तावेज़ों के आधार पर की जाती हैं।</li>
+            <li>गलत जानकारी देने पर आवेदन रद्द हो सकता है।</li>
+            <li>सेवा शुल्क कार्य के अनुसार अलग-अलग हो सकता है।</li>
+            <li>आवेदन की स्वीकृति संबंधित विभाग के नियमों पर निर्भर करती है।</li>
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- WhatsApp Chat Button Start -->
+
+<a href="https://wa.me/9546703110" 
+class="whatsapp-btn" 
+target="_blank">
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
+</a>
+
+<style>
+
+.whatsapp-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:65px;
+    height:65px;
+    background:#25d366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    z-index:9999;
+    animation:wave 1.5s infinite;
+}
+
+.whatsapp-btn img{
+    width:38px;
+}
+
+.whatsapp-btn:hover{
+    transform:scale(1.1);
+    transition:0.3s;
+}
+
+@keyframes wave{
+    0%{
+        box-shadow:0 0 0 0 rgba(37,211,102,0.7);
+    }
+    70%{
+        box-shadow:0 0 0 18px rgba(37,211,102,0);
+    }
+    100%{
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+    }
+}
+
+</style>
+
+<!-- WhatsApp Chat Button End -->
+<!-- SOCIAL MEDIA SECTION START -->
+
+<section class="about">
+
+    <h2>Follow Us</h2>
+
+    <h3 style="color:#0047ff; margin-top:10px;">
+        YouTube • Facebook • Instagram
+    </h3>
+
+    <div style="margin-top:25px; display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+
+        <!-- YouTube -->
+        <a href="https://youtube.com/@istiyak7techz?si=eo2NCDRnlO3DJIlA" target="_blank"
+        style="text-decoration:none; padding:12px 20px; background:#ff0000; color:#fff; border-radius:30px; font-weight:600;">
+            YouTube
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/1U3DJZQuXM/" target="_blank"
+        style="text-decoration:none; padding:12px 20px; background:#1877f2; color:#fff; border-radius:30px; font-weight:600;">
+            Facebook
+        </a>
+
+        <!-- Instagram -->
+       <a href="https://www.instagram.com/mr_istiyak_boy?igsh=OXNhdjNpOXVmOWJw" 
+target="_blank"
+        style="text-decoration:none; padding:12px 20px; background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7); color:#fff; border-radius:30px; font-weight:600;">
+            Instagram
+        </a>
+
+    </div>
+
+</section>
+
+<!-- SOCIAL MEDIA SECTION END -->
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 ISTIYAK SERVICE POINT | All Rights Reserved
+    </p>
+
+</footer>
+
+</body>
+</html>
